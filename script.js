@@ -22,28 +22,28 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    console.log(`Player selected - ${playerSelection}, Computer selected ${computerSelection} `)
+    console.log(`Player selected - ${playerSelection}, Computer selected ${computerSelection} `);
         
     if (playerSelection == arr[0] && computerSelection == arr[2] ||
         playerSelection == arr[1] && computerSelection == arr[0] ||
         playerSelection == arr[2] && computerSelection == arr[1])
         {
-            console.log('Player won')
+            console.log('Player won');
             playerWinCount++;
         } else if (playerSelection === computerSelection) {
-            console.log(`It's a tie`)
+            console.log(`It's a tie`);
         } else {
-            console.log('Computer won')
-            computerWinCount++
+            console.log('Computer won');
+            computerWinCount++;
         }
 }
 
 function game(){
     for (let i=0; i < numberOfGames; i++){
-        getAnswer()
+        getAnswer();
     }
-    console.log(`Final results - Player ${playerWinCount}, Computer ${computerWinCount}`)
-    console.log((playerWinCount > computerWinCount) ? 'Player WON!' : (playerWinCount == computerWinCount) ? "It's a tie :(" : 'Computer WON! Haha!')
+    console.log(`Final results - Player ${playerWinCount}, Computer ${computerWinCount}`);
+    console.log((playerWinCount > computerWinCount) ? 'Player WON!' : (playerWinCount == computerWinCount) ? "It's a tie :(" : 'Computer WON! Haha!');
     
     
 }
