@@ -46,11 +46,17 @@ button {
 
 }
 
-Button:hover {
+/* Button:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
 	background-color:#408c99;
-}
+} */
 Button:active {
 	position:relative;
 	top:1px;
+}
+
+.red {
+	background:none;
+
+    background-color: rgb(122, 1, 1);
 }
